@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className=' bg-gradient-to-b from-slate-500 to-slate-400 shadow-lg p-2 fixed w-full '>
+      <div className=' bg-gradient-to-b from-slate-500  to-slate-400 shadow-lg p-2 fixed w-full '>
         <h1 className='uppercase text-center text-2xl font-semibold'>
           Basic React Counter
         </h1>
