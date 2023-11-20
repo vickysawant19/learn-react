@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({name , about}) => {
+const Card = ({ name , about}) => {
   return (
     <div className=' bg-gray-300 shadow-xl rounded-xl overflow-hidden md:flex m-10'>
        
