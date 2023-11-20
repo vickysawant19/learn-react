@@ -21,7 +21,7 @@ function App() {
 
     <div className={`mt-16 bg-${bgCol}-500 h-screen shadow-xl w-full ease-in flex items-center justify-center flex-wrap`}>
 
-      <div className="p-2 rounded-full bg-white mx-10 fixed bottom-10 flex flex-wrap justify-center items-center gap-2 ">
+      <div className="p-4 rounded-full bg-white mx-10 fixed bottom-10 flex flex-wrap justify-center items-center gap-2 ">
          <div className="hidden bg-gray-500 bg-red-500 bg-green-500 bg-amber-500 bg-violet-500 bg-yellow-500 bg-pink-500 bg-amber-500 bg-orange-500"> 
          </div>
         
