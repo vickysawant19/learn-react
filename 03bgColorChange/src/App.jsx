@@ -5,7 +5,7 @@ import Button from "./components/Button"
 
 function App() {
 
-  const [bgCol , setValue] =useState("gray")
+  const [bgCol , setValue] = useState("gray")
 
   const handleBtnClick = (returnedValue) => {
 
