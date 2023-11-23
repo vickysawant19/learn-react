@@ -36,7 +36,7 @@ const Header = () => {
        contacts</NavLink>
 
         <NavLink 
-        to={`Profile/${Math.floor(Math.random()*100+1)}`}
+        to={`Profile/vickysawant19`}
         className={({isActive}) =>
         `${isActive ? "bg-stone-600 text-white m-2 p-2 rounded-lg hover:bg-stone-600 hover:text-white  shadow-xl font-bold" : "bg-stone-300 m-2 p-2 rounded-lg hover:bg-stone-600 hover:text-white  shadow-xl font-bold"}`
     }> Profile</NavLink>
