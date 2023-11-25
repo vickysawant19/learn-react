@@ -17,7 +17,8 @@ const [pass, setPass] = useState("")
     e.preventDefault()
     setUsername(user)
     setPassword(pass)
-    console.log("here")
+    setUser("")
+    setPass("")
    }
 
   return (
