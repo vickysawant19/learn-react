@@ -10,9 +10,9 @@ function App() {
   const [todos ,setTodos] = useState([])
   
 
-    const addTodo = (todo) => {
-      setTodos((prev) => [{id:Date.now(), ...todo}, ...prev])
-    }
+  const addTodo = (todo) => {
+    setTodos((prev) => [{id:Date.now(), ...todo}, ...prev])
+  }
 
    const delTodo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id != id))
@@ -46,9 +46,6 @@ function App() {
 
    },[todos])
 
-
-  // localStorage.setItem("name" , "hello")
-  // console.log(localStorage.getItem("name"));
 
   return (
     <>
