@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useTodo } from '../contexts/TodoContext'
 
 const ToDoItem = ({todo}) => {
+
   const [isEditable , setIseditable] = useState(false)
   const [todoMsg, setTodomsg] = useState(todo.todo)
 
@@ -52,7 +53,7 @@ const ToDoItem = ({todo}) => {
     onChange={(e)=> {setTodomsg(e.target.value)}}
     value = {todoMsg}
     readOnly = {!isEditable}
-    className={`bg-white w-full text-xl p-2  focus:outline-none text-ellipsis 
+    className={`bg-white w-full text-xl p-2 focus:outline-none text-ellipsis ${isEditable?"animate-pulse":""}
      ${todo.isComplete?'line-through':''}`}
     type="text" />
 

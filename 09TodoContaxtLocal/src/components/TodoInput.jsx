@@ -10,6 +10,7 @@ const TodoInput = () => {
 
   function handleClick(e){
     e.preventDefault()
+    if(todo === "") return
     addTodo( {todo, iscomplete:false} )
     setTodo("")
   }
