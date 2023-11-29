@@ -5,7 +5,7 @@ const initialState = {
 
     todos : [{
         id : 1,
-        text: "hello world"
+        text: ""
     }]
 }
 
@@ -20,7 +20,7 @@ export const  todoSlice = createSlice({
                 id : nanoid(),
                 text: action.payload  //paylaoad.text also work 
             }
-            if (todo != " "){
+            if ( todo.text != ""){
                 state.todos.push(todo) 
             } 
             
