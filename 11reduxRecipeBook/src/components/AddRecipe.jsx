@@ -10,7 +10,7 @@ const AddRecipe = () => {
         type="text" />
         <label 
         className='mt-2'
-        htmlFor="">Recipe Ingridents</label>
+        htmlFor="">Recipe Ingridents </label>
         <textarea 
         className='w-full border focus:bg-gray-200'
         name="" id="" cols="10" rows="5"></textarea>

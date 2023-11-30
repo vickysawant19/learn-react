@@ -1,8 +1,12 @@
 import React from 'react'
+import Nav from './Nav'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    
+    <div className=' flex justify-center'>Home Page</div>
+    </>
   )
 }
 
