@@ -9,17 +9,20 @@ import AddRecipe from './components/AddRecipe.jsx';
 import Nav from './components/Nav.jsx';
 import ShowRecipe from './components/ShowRecipe.jsx';
 
+import { Provider } from 'react-redux'
+import { store } from './store/Store.js';
+import About from './components/About.jsx';
+
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path='/' element={<App/>} errorElement={<Nav/>}>
-     <Route path="Home" element = {<Home/>}/>
-     <Route path="MyRecipe" element = {<MyRecipes/>}>
-        <Route path="showrecipe/:cardid" element= {<ShowRecipe/>}/>
-     </Route>
-     <Route path="AddRecipe" element = {<AddRecipe/>} />
-     <Route path="About" element = {<ShowRecipe/>} />
-
-
+  <Route path='/' element={<App/>} errorElement={<div> <Nav/> No Page Found</div>}>
+     <Route index element = {<Home/>}/>
+     <Route path="myrecipe" element = {<MyRecipes/>} />
+    
+     <Route path="myrecipe/showrecipe/:id" element = {<ShowRecipe/>}/>
+     <Route path="addrecipe" element = {<AddRecipe/>} />
+     <Route path="about" element = {<About/>} />
+     
   </Route>
     
 
@@ -28,6 +31,10 @@ const router = createBrowserRouter(createRoutesFromElements(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Provider store={store}>
     <RouterProvider router={router}/>
+    </Provider>
   </React.StrictMode>,
 )
+
+
